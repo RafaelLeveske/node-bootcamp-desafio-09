@@ -18,7 +18,13 @@ class Product {
   name: string;
 
   @Column()
-  price: { type: 'decimal'; precision: 2; scale: 2 };
+  price: number;
+
+  type: 'decimal';
+
+  precision: 2;
+
+  scale: 2;
 
   @Column()
   quantity: number;
